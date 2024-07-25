@@ -5,8 +5,9 @@ const div = document.querySelector(`div`);
 const arr = [];
 
 
+// Rendering Items
+
 function renderList() {
-    arr.push(`${item.value} is cost you ${amount.value}`);
     div.innerHTML = ``
     item.value = ``
     amount.value = ``
@@ -22,14 +23,37 @@ function renderList() {
     }
 }
 
+// Rendering Items
 
+
+
+
+// Add Items
+
+function addItem() {
+    
+    arr.push(`${item.value} is cost you ${amount.value}`);
+    renderList()
+}
+
+// Add Items
+
+
+
+
+// Removing Items
 
 function removeItem(index) {
     arr.splice(index, 1)
     renderList()
 }
 
+// Removing Items
 
+
+
+
+// Edit Items
 
 function editItem(index) {
     const updateItem = prompt(`Enter your new item`)
@@ -37,3 +61,5 @@ function editItem(index) {
     arr.splice(index, 1, `${updateItem} is cost you ${updateAmount}`)
     renderList()
 }
+
+// Edit Items
