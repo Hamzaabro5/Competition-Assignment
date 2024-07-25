@@ -31,8 +31,9 @@ function renderList() {
 // Add Items
 
 function addItem() {
-    
-    if (item.value === ``) {
+    if (item.value === `` && amount.value === ``) {
+        alert(`Enter Your Expense item and amount`)
+    }else if (item.value === ``) {
         alert(`Enter Your Expense item`)
     }else if (amount.value === ``) {
         alert(`Enter Your Expense amount`) 
