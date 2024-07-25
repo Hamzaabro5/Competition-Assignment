@@ -1,7 +1,7 @@
 const form = document.querySelector(`form`);
 const item = document.querySelector(`.item`);
 const amount = document.querySelector(`.amount`);
-const div = document.querySelector(`div`);
+const div = document.querySelector(`.render`);
 const arr = [];
 
 
@@ -32,8 +32,16 @@ function renderList() {
 
 function addItem() {
     
-    arr.push(`${item.value} is cost you ${amount.value}`);
-    renderList()
+    if (item.value === ``) {
+        alert(`Enter Your Expense item`)
+    }else if (amount.value === ``) {
+        alert(`Enter Your Expense amount`) 
+    } 
+    else{
+        arr.push(`${item.value} is cost you $${amount.value}`);
+        renderList()
+    }
+
 }
 
 // Add Items

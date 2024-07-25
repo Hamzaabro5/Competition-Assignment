@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Expense Management System</h1>
 
-    
+
     <!-- Getting Input Value  -->
-        <label for="">Expense Item:</label><br/>
+        <div class="content">
+            <label for="">Expense Item:</label><br/>
         <input class="item" type="text"><br/><br/><br/>
         <label for="">Expense Amount:</label><br/>
         <input class="amount" type="text"><br /><br />
         
-        <button onclick="addItem()">Check Expense</button>
+        <button class="checkButton" onclick="addItem()">Check Expense</button>
+        </div>
 
     <!-- Getting Input Value -->
 
 
 
     <!-- Rendering Data -->
-    <div>
+    <div class="render">
     </div>
     <!-- Rendering Data -->
 
