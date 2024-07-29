@@ -15,13 +15,15 @@ function renderList() {
     for (let i = 0; i < arr.length; i++) {
         div.innerHTML += `
         <h1>${arr[i]}
-        <button onclick="removeItem(${i})">Remove</button>
-        <button onclick="editItem(${i})">Edit</button>
+        <button class="removeButton" onclick="removeItem(${i})"><span>Remove</span></button>
+        <button class="editButton" onclick="editItem(${i})"><span>Edit</span></button>
+        
         </h1>
         
         `
     }
 }
+
 
 // Rendering Items
 
