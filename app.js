@@ -4,7 +4,6 @@ const amount = document.querySelector(`.amount`);
 const div = document.querySelector(`.render`);
 const arr = [];
 
-
 // Rendering Items
 
 function renderList() {
